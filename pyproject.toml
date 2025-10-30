@@ -1,0 +1,17 @@
+[project]
+name = "my-deepagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+dependencies = [
+    "deepagents>=0.2.0",
+    "jupyter>=1.1.1",
+    "python-dotenv>=1.2.1",
+    "tavily-python>=0.7.12",
+    "langgraph>=0.2.0",
+    "langchain-openai>=0.2.0",
+    "langchain-core>=0.3.0",
+]
+
+[tool.uv]
+index-url = "https://pypi.tuna.tsinghua.edu.cn/simple"
