@@ -152,10 +152,6 @@ async def create_agent():
 # 为 langgraph dev 提供延迟初始化的 graph
 # 使用函数而不是立即初始化，避免在导入时创建事件循环
 def _create_graph_sync():
-    """同步方式创建 graph（仅用于 langgraph dev）"""
-    import nest_asyncio
-    nest_asyncio.apply()  # 允许嵌套事件循环
-
     graph_instance, client = asyncio.run(create_agent())
     return graph_instance
 
